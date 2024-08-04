@@ -31,6 +31,7 @@ class OnBoardFragment : Fragment() {
 
     private fun initialize() {
         binding.viewPager2.adapter = OnBoardViewPagerAdapter(this)
+        binding.indicator.setViewPager(binding.viewPager2)
     }
 
     private fun setupListeners() = with(binding.viewPager2) {

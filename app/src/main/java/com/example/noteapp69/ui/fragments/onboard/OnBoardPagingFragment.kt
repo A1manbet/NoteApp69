@@ -32,13 +32,17 @@ class OnBoardPagingFragment : Fragment() {
     private fun initialize()= with(binding) {
         when(requireArguments().getInt(ARG_ONBOARD_POSITION)){
             0 -> {
+                binding.lottie.setAnimation(R.raw.lottie1)
                 txtOn.text = "Очень удобный функционал"
             }
             1 -> {
+                binding.lottie.setAnimation(R.raw.lottie2)
                 txtOn.text = "Быстрый, качественный продукт"
             }
             2 -> {
+                binding.lottie.setAnimation(R.raw.lottie3)
                 txtOn.text = "Куча функций и интересных фишек"
+                txtStart.text = "Начать работу"
             }
         }
     }

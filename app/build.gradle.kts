@@ -52,4 +52,11 @@ dependencies {
     //Navigation
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+    
+    //Lottie
+    val lottieVersion = "6.4.0"
+    implementation (libs.lottie)
+
+    //dot indicator
+    implementation (libs.circleindicator)
 }
